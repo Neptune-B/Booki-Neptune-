@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
+:root {
+
+    --blue : #0065fc;
+    --lightgrey: #f2f2f2;
+
+}
+
 * {
     box-sizing: border-box;
     font-family:"Raleway" , "sans-serif" ; 
@@ -9,6 +16,9 @@
 body {
 
     margin: 0;
+
+
+
 }
 
 a {
@@ -16,6 +26,7 @@ a {
     text-decoration: none;
 }
 
+/* NAVBAR */
 nav {
 
     display: flex;
@@ -84,4 +95,56 @@ nav a:hover {
 
 }
 
+/* BODY */
+
+.wrapper {
+    padding: 0 2rem;
+}
+
+/* SEARCH-FORM */
+
+.search-form {
+
+    display: flex;
+    
+    
+}
+
+.search-form i {
+
+    background-color: var(--lightgrey);
+    padding: 1rem 1.2rem ;
+    border-radius: 1rem 0 0 1rem ;
+
+}
+
+.search-form input {
+
+    padding-right: 6rem;
+    border: 1px solid var(--lightgrey);
+
+
+}
+
+.search-form input::placeholder {
+
+    /* font-weight:bold */ 
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.search-form button {
+
+    border-radius: 0 1rem 1rem 0 ;
+    background-color: var(--blue);
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem ;
+    border: none;
+    cursor: pointer;
+    
+    
+}
 
