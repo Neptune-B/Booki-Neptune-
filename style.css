@@ -4,21 +4,16 @@
 
     --blue : #0065fc;
     --lightgrey: #f2f2f2;
-
 }
 
 * {
     box-sizing: border-box;
     font-family:"Raleway" , "sans-serif" ; 
-
 }
 
 body {
 
     margin: 0;
-
-
-
 }
 
 a {
@@ -50,15 +45,13 @@ nav a:hover {
 #logo {
        margin-right: auto;
        padding: 0 2rem;
-
 }
 
 .signup {
 
     font-weight: bold;
     color: #0065fc;
-    
-}
+    }
 
 .sub-nav {
 
@@ -74,24 +67,20 @@ nav a:hover {
     .sub-nav {
         order: 1;
         flex-basis: 100%;
-        
-    }
+        }
     
     .sub-nav a {
         
         flex-basis: 50%;
         text-align: center;
         border-bottom: 3px solid lightgrey;
-
-}
+       }
 
 .sub-nav a:hover {
 
     border-bottom: 3px solid #0065fc;
     border-top-color: transparent;
-
-    
-}
+   }
 
 }
 
@@ -106,45 +95,44 @@ nav a:hover {
 .search-form {
 
     display: flex;
-    
-    
+    align-items: center;
+    font-size: 1.2rem;
+    }
+
+.search-form * {
+
+    padding: 1rem 1.5rem ;
+    font-size: 1.2rem;
 }
 
 .search-form i {
-
     background-color: var(--lightgrey);
-    padding: 1rem 1.2rem ;
-    border-radius: 1rem 0 0 1rem ;
-
+    border-radius: 1.5rem 0 0 1.5rem ;
+    
+    
 }
 
 .search-form input {
-
-    padding-right: 6rem;
+    flex-basis: 16rem;
     border: 1px solid var(--lightgrey);
-
-
-}
-
-.search-form input::placeholder {
-
-    /* font-weight:bold */ 
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-weight: bold;
 }
 
 .search-form button {
-
     border-radius: 0 1rem 1rem 0 ;
     background-color: var(--blue);
     color: #f2f2f2;
-    font-size: 1.2rem;
     font-weight: bold;
     padding: 1rem 1.5rem ;
     border: none;
     cursor: pointer;
-    
-    
-}
+    opacity: 0.9;
+    transition: tranform 200ms;
+    }
+
+    .search-form button:hover {
+        opacity: 1;
+        transform: scale(1.03);
+       
+    }
+
 
